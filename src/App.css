@@ -1,0 +1,89 @@
+*{
+    color: #3B3B3B;
+}
+.main{
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dic{
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+    border-radius: 2rem;
+    width: 60%;
+    min-height: 50vh;
+}
+.txt{
+    width: 30%;
+    height: 40px;
+    border:none;
+    border-radius: 2rem;
+}
+.search{
+    width:100px;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+.ans{
+    font-size: 20px;
+}
+.circle1,
+.circle2 {
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.3)
+    );
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+}
+.circle1 {
+    top: 15%;
+    right: 15%;
+}
+.circle2 {
+    bottom: 10%;
+    left: 10%;
+}
+@media screen and (max-width:1350px) {
+    .txt{
+        width: 80%;
+    }
+    .circle1,.circle2{
+        display: none;
+    }
+}
+@media screen and (max-width:800px) {
+    .dic{
+        width: 80%;
+    }
+    .txt{
+        width: 80%;
+    }
+    .ans{
+        font-size: 15px;
+    }
+    .circle1,.circle2{
+        display: none;
+    }
+}
+@media screen and (max-width:600px) {
+    .dic{
+        width: 90%;
+    }
+    .ans{
+        font-size: 15px;
+    }
+    .circle1,.circle2{
+        display: none;
+    }
+}
+
